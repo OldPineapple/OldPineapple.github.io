@@ -3,18 +3,18 @@
 
 	<head>
 		<meta charset = "UTF-8">
-		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
 			<title lang = "ja-jp, zh-cn">翰文の菠萝屋</title>
 	</head>
 	
 	<body>
-		<div class = "b" lang = "ja-jp" style = "font-family: Hiragino Kaku Gothic Pro; font-size: 1.3vw">
+		<div class = "b" lang = "ja-jp" style = "font-family: Hiragino Kaku Gothic Pro">
 			『生まれて、すみません』
 		</div>
 		<div class = "welcome">
 			<h1>Welcome to Pineapple House</h1>
 		</div>
-		<p style = "text-align: center; font-size: 2vw; font-family: Gill Sans; margin-bottom: 30vw">Host: OldPineapple</p>
+		<p>Host: OldPineapple</p>
 		<div class = "container">
 			<div class = "para">
 				<h2>I am...</h2>
@@ -47,11 +47,24 @@
 					<li>I could have many 419 for free.</li>
 					<li>I could die before the world ends.</li>
 				</ul>
+				<h2>My accounts...</h2>
+				<ul>
+					<li><a href = "https://space.bilibili.com/87608327" target = "_blank">Bilibili</a></li>
+					<li><a href = "https://www.instagram.com/han_wen_wang/" target = "_blank">Instagram</a></li>
+					<li><a href = "https://github.com/OldPineapple" target = "_blank">GitHub</a></li>
+				</ul>
 			</div>
 		</div>
 	</body>
 	
 	<style>
+	
+	p {
+		 text-align: center; 
+		 font-size: 2vw; 
+		 font-family: Gill Sans; 
+		 margin-bottom: 35vw
+	}
 	
 	h2 {
 		margin-top: 4%;
@@ -76,6 +89,7 @@
 		text-align: center;
 		line-height: 60%;
 		font-size: 100%;
+		font-size: 1.3vw
 	}
 	
 	div.para {
@@ -86,8 +100,34 @@
 	}
 	
 	div.container {
-		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		padding-top: 5px;
+		padding-bottom: 5%;
 		background: rgba(255, 183, 197, 0.6);
+	}
+	
+	@media (min-aspect-ratio: 2/1) {
+		div.welcome {
+			font-size: 4vh;
+			margin-top: 40vh;
+		}
+		
+		p {
+			font-size: 4vh;
+			margin-bottom: 38vh;
+		}
+	}
+	
+	@media (max-aspect-ratio: 3/2) {
+	
+		div.b {
+			font-size: 2vh;
+		}
+	
+		p {
+			margin-bottom: 80vh;
+		}
 	}
 	
 	</style>
